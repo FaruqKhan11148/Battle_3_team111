@@ -1,0 +1,188 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 515;
+    font-style: normal;
+}
+
+.main_box{
+    background-image: url(sub_imgs/camera\ img.webp);
+    height: 100vh;
+    background-size:cover ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn_one{
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+    position: absolute;
+    left: 16px;
+    line-height: 60px;
+}
+
+.sidebar_menu{
+    position: fixed;
+    left: -300px;
+    height: 100vh;
+    width: 300px;
+    background-color: rgba(255,255,255,0.1);
+    box-shadow: 0 0 6px rgba(255, 255, 255, 0.5);
+    transition: all 0.25s linear;
+}
+
+.sidebar_menu .logo{
+    position: absolute;
+    width: 100%;
+    line-height: 60px;
+    box-shadow: 0 2px 3px rgba(255, 255, 255, 0.5);
+    height: 60px;
+}
+
+.sidebar_menu .logo a{
+    position: absolute;
+    left: 50px;
+    color: white;
+    text-decoration: none;
+    font-size:20px;
+    font-weight: 500;
+
+}
+
+.sidebar_menu .btn_two{
+    color: grey;
+    font-size: 25px;
+    position: absolute;
+    left: 275px;
+    font-weight: 700;
+    line-height: 60px;
+    
+}
+
+.sidebar_menu .menu{
+    position: absolute;
+    width: 100%;
+    top: 80px;
+}
+
+.sidebar_menu .menu li{
+    margin-top: 6px;
+    padding: 14px 20px;
+}
+
+.sidebar_menu .menu i, a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.sidebar_menu .menu i{
+    padding-right:8px ;
+}
+
+.sidebar_menu .social_media{
+    color: white;
+    opacity: 0.5;
+    position: absolute;
+    left: 25%;
+    bottom: 50px;
+}
+
+.sidebar_menu .social_media i{
+    color: white;
+    opacity: 0.5;
+    padding: 0,5px;
+}
+
+#check{
+    display: none;
+    position: absolute;
+    top: -100px;
+}
+
+.sidebar_menu .menu li:hover{
+    box-shadow: 0 0 3px rgba(255, 255, 255, 0.5);
+}
+
+.btn_one {
+margin-top: -40rem;
+}
+
+.btn_one i:hover{
+    font-size: 40px;
+    cursor: pointer;
+    
+
+}
+
+.btn_two i:hover{
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.sidebar_menu .social_media i:hover{
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+#check:checked ~ .sidebar_menu{
+    left: 0;
+}
+
+#check:checked ~ .btn_one i{
+    opacity: 0;
+}
+
+.images {
+    height: 650px;
+    width: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px; 
+    padding: 10px;
+    margin-left: -25rem;
+}
+
+.img1,
+.img2,
+.img3 {
+    height: 280px;
+    width: 280px;
+    border: 2px solid black;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.img1 {
+    background-image: url(sub_imgs/img2.jpg);
+}
+
+.img2 {
+    background-image: url(sub_imgs/img1.jpg);
+}
+
+.img3 {
+    background-image: url(sub_imgs/img3.jpg);
+}
+
+
+.img1 {
+    margin-left: 30px;
+}
+
+.img2 {
+    margin-left: 350px;
+}
+
+.img3 {
+    margin-left: 30px;
+    margin-top: -220px;
+}
